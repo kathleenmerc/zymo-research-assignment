@@ -42,3 +42,21 @@
     width: 100%;
   }
 }
+
+#hero-headers {
+  text-align: center;
+  margin: 20px;
+}
+
+#hero-headers h1 {
+  margin: 5px;
+  color: rgb(15, 116, 47);
+  font-weight: 900;
+  font-size: 34px;
+}
+
+#hero-headers h4 {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 22px;
+}
