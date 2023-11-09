@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Banner styles for mobile screens */
+#banner-mobile {
+  display: block;
+  width: 100%;
+}
+#banner-tablet {
+  display: none;
+}
+#banner-desktop {
+  display: none;
+}
+
+/* Banner styles for tablet screens */
+@media only screen and (min-width: 600px) {
+  #banner-mobile {
+    display: none;
+  }
+  #banner-tablet {
+    display: block;
+    width: 100%;
+  }
+  #banner-desktop {
+    display: none;
+  }
+}
+
+/* Banner styles for desktop screens */
+@media only screen and (min-width: 1025px) {
+  #banner-mobile {
+    display: none;
+  }
+  #banner-tablet {
+    display: none;
+  }
+  #banner-desktop {
+    display: block;
+    width: 100%;
+  }
+}
