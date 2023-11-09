@@ -45,7 +45,7 @@
 
 #hero-headers {
   text-align: center;
-  margin: 20px;
+  margin: 50px;
 }
 
 #hero-headers h1 {
@@ -59,4 +59,25 @@
   margin: 5px;
   font-weight: 600;
   font-size: 22px;
+}
+
+#hero-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.icon-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 20px;
+
+}
+.icon-card img {
+  width: 100px;
 }
