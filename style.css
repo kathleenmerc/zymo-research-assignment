@@ -83,6 +83,40 @@ body {
   font-size: 16px;
   font-weight: 900;
   border: none;
+  position: relative;
+}
+
+#cta-button:hover {
+  color: rgb(15, 116, 47);
+  outline: 2px solid rgb(15, 116, 47);
+  cursor: pointer;
+}
+
+#cta-button:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  content: "Inquire Now";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* text and styles are hidden initially on pseudo-element */
+  transition: all 0.35s; /* pseudo-element styles will fade in */
+}
+
+#cta-button:hover:after {
+  width: 100%;
+  opacity: 1; /* pseudo-element is now visible on hover */
+}
+
+#cta-button:active {
+  transform: scale(
+    0.98
+  ); /* Scaling button to 0.98 to its original size when clicked */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); /* Lowering the shadow */
 }
 
 /*  ----- About Section ----- */
