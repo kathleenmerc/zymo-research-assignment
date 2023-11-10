@@ -204,11 +204,36 @@ form button {
   }
 
   /*  Contact Section  */
+  #contact-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+  }
+
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 8px;
     font-size: 16px;
+    max-width: 700px;
+  }
+
+  .form-fields {
+    padding: 10px;
+  }
+
+  #additional-comments-wrapper {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #submit-button-wrapper {
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
@@ -245,5 +270,6 @@ form button {
   #about-wrapper {
     max-width: 800px;
   }
+
   /*  Contact Section  */
 }
