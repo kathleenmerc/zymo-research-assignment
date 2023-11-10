@@ -121,6 +121,10 @@
 }
 /*  Contact Section  */
 
+#contact {
+  margin: 30px 0px;
+}
+
 /*  Contact Section Headers  */
 #contact h3 {
   font-size: 24px;
@@ -130,8 +134,15 @@
 /*  Contact Form for Mobile Screen  */
 form {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   font-size: 16px;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
   padding: 0px 30px;
 }
 
@@ -195,10 +206,12 @@ form button {
   }
 
   /*  Contact Section  */
-  /* form {
+  form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
+    gap: 10px;
+    font-size: 16px;
+  }
 }
 
 /*  Desktop Screen Styling  */
