@@ -88,6 +88,10 @@
   padding: 10px 30px;
 }
 
+#about p {
+  padding:10px;
+}
+
 #about-headers {
   text-align: center;
 }
