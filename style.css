@@ -43,24 +43,26 @@
   }
 }
 
+/* Hero section title and subtitle */
 #hero-headers {
   text-align: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 #hero-headers h1 {
   margin: 5px;
   color: rgb(15, 116, 47);
   font-weight: 900;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 #hero-headers h4 {
   margin: 5px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 
+/* Hero section icons */
 #hero-icons {
   display: flex;
   flex-direction: column;
@@ -81,6 +83,7 @@
   width: 100px;
 }
 
+/* Hero section CTA button */
 .cta-button-wrapper {
   text-align: center;
 }
@@ -96,11 +99,13 @@
   border: none;
 }
 
+/* About section */
 #about {
   padding: 50px 30px;
   font-size: 16px;
 }
 
+/* About section title and subtitle */
 #about-headers {
   text-align: center;
 }
