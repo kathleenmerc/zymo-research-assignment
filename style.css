@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Banner styles for mobile screens */
@@ -9,6 +11,7 @@
   display: block;
   width: 100%;
 }
+
 #banner-tablet,
 #banner-desktop {
   display: none;
@@ -49,7 +52,9 @@
   justify-content: center;
   font-size: 18px;
   margin: 20px;
+  text-align: center;
 }
+
 .icon-card img {
   width: 100px;
 }
@@ -71,11 +76,16 @@
 }
 
 /* About Section */
+
 #about {
   margin: 50px 0px;
-  padding: 10px 30px;
   font-size: 16px;
   background-color: rgb(237, 237, 237);
+  width: 100vw;
+}
+
+#about-wrapper {
+  padding: 10px 30px;
 }
 
 #about-headers {
@@ -129,33 +139,56 @@ form button {
   border: none;
 }
 
-
-
-
 /* Tablet Screen Styling */
 @media only screen and (min-width: 600px) {
-  #banner-mobile {
+  /* Hero Section */
+  #banner-mobile,
+  #banner-desktop {
     display: none;
   }
+
   #banner-tablet {
     display: block;
     width: 100%;
   }
-  #banner-desktop {
-    display: none;
+
+  #hero-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
   }
+
+  /* About Section */
+
+  /* Contact Section */
 }
 
 /* Desktop Screen Styling */
 @media only screen and (min-width: 1025px) {
-  #banner-mobile {
-    display: none;
-  }
+  /* Hero Section */
+  #banner-mobile,
   #banner-tablet {
     display: none;
   }
+
   #banner-desktop {
     display: block;
     width: 100%;
   }
+
+  #hero-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+  }
+
+  /* About Section */
+
+  /* Contact Section */
 }
