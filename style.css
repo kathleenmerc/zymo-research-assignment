@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,42 +9,12 @@
   display: block;
   width: 100%;
 }
-#banner-tablet {
-  display: none;
-}
+#banner-tablet,
 #banner-desktop {
   display: none;
 }
 
-/* Banner styles for tablet screens */
-@media only screen and (min-width: 600px) {
-  #banner-mobile {
-    display: none;
-  }
-  #banner-tablet {
-    display: block;
-    width: 100%;
-  }
-  #banner-desktop {
-    display: none;
-  }
-}
-
-/* Banner styles for desktop screens */
-@media only screen and (min-width: 1025px) {
-  #banner-mobile {
-    display: none;
-  }
-  #banner-tablet {
-    display: none;
-  }
-  #banner-desktop {
-    display: block;
-    width: 100%;
-  }
-}
-
-/* Hero section title and subtitle */
+/* Hero Section */
 #hero-headers {
   text-align: center;
   margin: 30px;
@@ -62,7 +33,7 @@
   font-size: 20px;
 }
 
-/* Hero section icons */
+/* Hero Section Icons */
 #hero-icons {
   display: flex;
   flex-direction: column;
@@ -83,7 +54,7 @@
   width: 100px;
 }
 
-/* Hero section CTA button */
+/* Hero Section CTA Button */
 .cta-button-wrapper {
   text-align: center;
 }
@@ -99,7 +70,7 @@
   border: none;
 }
 
-/* About section */
+/* About Section */
 #about {
   margin: 50px 0px;
   padding: 10px 30px;
@@ -107,7 +78,6 @@
   background-color: rgb(237, 237, 237);
 }
 
-/* About section title and subtitle */
 #about-headers {
   text-align: center;
 }
@@ -122,15 +92,13 @@
   margin: 5px;
 }
 
-/* Contact section */
+/* Contact Section */
 #contact h3 {
   font-size: 24px;
   text-align: center;
 }
 
-/* Contact Form */
-
-/* Contact Form for Mobile screen */
+/* Contact Form for Mobile Screen */
 form {
   display: grid;
   gap: 10px;
@@ -138,13 +106,9 @@ form {
   padding: 0px 30px;
 }
 
-/* Form textboxes */
-form input {
-  font-size: 16px;
-  padding: 5px;
-}
-
-form textarea {
+/* Form Textboxes */
+form input,
+textarea {
   font-size: 16px;
   padding: 5px;
 }
@@ -163,4 +127,35 @@ form button {
   font-size: 16px;
   font-weight: 900;
   border: none;
+}
+
+
+
+
+/* Tablet Screen Styling */
+@media only screen and (min-width: 600px) {
+  #banner-mobile {
+    display: none;
+  }
+  #banner-tablet {
+    display: block;
+    width: 100%;
+  }
+  #banner-desktop {
+    display: none;
+  }
+}
+
+/* Desktop Screen Styling */
+@media only screen and (min-width: 1025px) {
+  #banner-mobile {
+    display: none;
+  }
+  #banner-tablet {
+    display: none;
+  }
+  #banner-desktop {
+    display: block;
+    width: 100%;
+  }
 }
