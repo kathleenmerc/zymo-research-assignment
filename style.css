@@ -110,7 +110,7 @@
   margin: 5px;
 }
 
-#about p {
+#about-section p {
   padding: 10px;
 }
 /*  Contact Section  */
@@ -120,7 +120,7 @@
 }
 
 /*  Contact Section Headers  */
-#contact h3 {
+#contact-section h3 {
   font-size: 24px;
   text-align: center;
 }
