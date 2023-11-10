@@ -1,4 +1,4 @@
-/*  Global Styles  */
+/*  ----- Global Styles ----- */
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,7 +10,7 @@ body {
   min-width: 320px;
 }
 
-/*  Hero Section  */
+/* ----- Hero Section ----- */
 
 #hero-section {
   margin-bottom: 30px;
@@ -85,7 +85,7 @@ body {
   border: none;
 }
 
-/*  About Section  */
+/*  ----- About Section ----- */
 
 #about-section {
   display: flex;
@@ -117,7 +117,8 @@ body {
 #about-section p {
   padding: 10px;
 }
-/*  Contact Section  */
+
+/*  ----- Contact Section ----- */
 
 #contact-section {
   margin-bottom: 30px;
@@ -167,9 +168,9 @@ form button {
   border: none;
 }
 
-/*  Media Queries  */
+/* ----- Media Queries ----- */
 
-/*  Tablet Screen Styling  */
+/*  --- Tablet Screen Styling --- */
 @media only screen and (min-width: 600px) {
   /*  Hero Section  */
   #banner-mobile,
@@ -237,7 +238,7 @@ form button {
   }
 }
 
-/*  Desktop Screen Styling  */
+/*  --- Desktop Screen Styling --- */
 @media only screen and (min-width: 1025px) {
   /*  Hero Section  */
   #banner-mobile,
@@ -260,16 +261,9 @@ form button {
   }
 
   /*  About Section  */
-  #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   #about-wrapper {
     max-width: 800px;
   }
 
-  /*  Contact Section  */
+  /*  Contact Section - same as tablet  */
 }
