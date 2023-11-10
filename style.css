@@ -101,7 +101,7 @@
 
 /* About section */
 #about {
-  margin:50px 0px;
+  margin: 50px 0px;
   padding: 10px 30px;
   font-size: 16px;
   background-color: rgb(237, 237, 237);
@@ -120,4 +120,47 @@
 #about-headers h4 {
   font-size: 18px;
   margin: 5px;
+}
+
+/* Contact section */
+#contact h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Contact Form */
+
+/* Contact Form for Mobile screen */
+form {
+  display: grid;
+  gap: 10px;
+  font-size: 16px;
+  padding: 0px 30px;
+}
+
+/* Form textboxes */
+form input {
+  font-size: 16px;
+  padding: 5px;
+}
+
+form textarea {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* Form Submit Button */
+#submit-button-wrapper {
+  text-align: center;
+}
+
+form button {
+  background-color: rgb(15, 116, 47);
+  color: white;
+  text-align: center;
+  width: 200px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 900;
+  border: none;
 }
