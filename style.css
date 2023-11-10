@@ -78,7 +78,7 @@
 }
 
 /*  About Section  */
-
+/* 
 #about {
   margin: 50px 0px;
   font-size: 16px;
@@ -87,11 +87,19 @@
 }
 
 #about-wrapper {
-  padding: 10px 30px;
+
+} */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 237, 237);
 }
 
-#about p {
-  padding: 10px;
+#about-wrapper {
+  padding: 10px 30px;
 }
 
 #about-headers {
@@ -108,6 +116,9 @@
   margin: 5px;
 }
 
+#about p {
+  padding: 10px;
+}
 /*  Contact Section  */
 
 /*  Contact Section Headers  */
@@ -184,6 +195,10 @@ form button {
   }
 
   /*  Contact Section  */
+  /* form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
 }
 
 /*  Desktop Screen Styling  */
