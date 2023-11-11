@@ -69,6 +69,7 @@ button:active {
 #banner-mobile {
   display: block;
   width: 100%;
+  animation: fadeIn 1s ease-in;
 }
 
 #banner-tablet,
@@ -77,6 +78,7 @@ button:active {
 }
 
 /*  Hero Section Headers  */
+
 #hero-headers {
   text-align: center;
   margin: 30px;
@@ -333,6 +335,7 @@ textarea {
 /*  --- Tablet Screen Styling --- */
 @media only screen and (min-width: 600px) {
   /*  Hero Section  */
+
   #banner-mobile,
   #banner-desktop {
     display: none;
@@ -401,6 +404,7 @@ textarea {
 /*  --- Desktop Screen Styling --- */
 @media only screen and (min-width: 1025px) {
   /*  Hero Section  */
+
   #banner-mobile,
   #banner-tablet {
     display: none;
