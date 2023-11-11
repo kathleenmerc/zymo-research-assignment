@@ -46,16 +46,19 @@ function closeModal() {
 /* ----- Intersection Observers for appear animation ----- */
 
 function createIntersectionObserver(target, className) {
-  const newObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        target.classList.add(className);
+  const newObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          target.classList.add(className);
 
-        // Disconnect the observer after the animation has started
-        observer.disconnect();
-      }
-    });
-  });
+          // Disconnect the observer after the animation has started
+          observer.disconnect();
+        }
+      });
+    },
+    { threshold: 0 } // Set the threshold to 0%
+  );
 
   return newObserver;
 }
