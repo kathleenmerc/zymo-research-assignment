@@ -6,7 +6,7 @@
 
 ## Live Site
 
-Check out the live site [here](https://kathleenmerc.github.io/zymo-research-assignment/).
+Check out the [live site here](https://kathleenmerc.github.io/zymo-research-assignment/).
 
 ## Table of Contents
 
@@ -17,13 +17,17 @@ Check out the live site [here](https://kathleenmerc.github.io/zymo-research-assi
 
 ## Objective
 
-As a front-end web developer, the goal was to build a new landing page based on a design mock. The page consists of a hero section with prominent headings and a call-to-action button, an About section with titles and text, and a contact form including input fields and a submit button.
+As a front-end web developer, the goal was to build a new landing page based on a design mock. 
+
+The page includes:
+- Hero section with prominent headings and a call-to-action button
+- 'About' section with titles and text
+- Contact form with input fields and a submit button
 
 Image of Design Mock:
 <p align="center">
   <img src="images/landing-page-mockup-design.png" alt="Design Mock" width="300">
 </p>
-
 
 ## Requirements
 
@@ -47,12 +51,10 @@ Image of Design Mock:
 ## Features
 
 - CSS Flexbox and Grid
-- DOM Manipulation
-- Event Listeners
-- Form Validation
-- Modal informing the user of their successful form submission
+- DOM Manipulation and Event Listeners
+- Form Validation and Modal informing the user of their successful form submission
 - CSS hover styling for buttons
-- Smooth Scrolling
+- Media Queries and Smooth Scrolling for website responsiveness
 - Animations implemented with CSS keyframes and JavaScript Intersection Observer
 
 
