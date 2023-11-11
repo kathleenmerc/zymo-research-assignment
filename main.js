@@ -45,3 +45,32 @@ function closeModal() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 }
+
+/* ----- Intersection Observers for appear animation ----- */
+const aboutSection = document.getElementById("about-section");
+
+const aboutSectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Add the in-viewport class when the element is in the viewport
+      aboutSection.classList.add("in-viewport");
+      // Disconnect the observer after the animation has started (optional)
+      observer.disconnect();
+    }
+  });
+});
+
+const contactSectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add the in-viewport class when the element is in the viewport
+        contactSection.classList.add("in-viewport");
+        // Disconnect the observer after the animation has started (optional)
+        observer.disconnect();
+      }
+    });
+  });
+
+// Start observing the target element
+aboutSectionObserver.observe(aboutSection);
+contactSectionObserver.observe(contactSection);
