@@ -1,8 +1,8 @@
 # Zymo Research Landing Page
 
-This landing page showcases a responsive and visually appealing design with a hero section, text, and a contact form.
-
-![Responsive Screens](images/devices.png)
+<p align="center">
+  <img src="images/devices.png" alt="Responsive Screens">
+</p>
 
 ## Live Site
 
@@ -20,8 +20,10 @@ Check out the live site [here](https://kathleenmerc.github.io/zymo-research-assi
 As a front-end web developer, the goal was to build a new landing page based on a design mock. The page consists of a hero section with prominent headings and a call-to-action button, an About section with titles and text, and a contact form including input fields and a submit button.
 
 Image of Design Mock:
+<p align="center">
+  <img src="images/landing-page-mockup-design.png" alt="Design Mock" width="300">
+</p>
 
-![Design Mock](images/landing-page-mockup-design.png)
 
 ## Requirements
 
