@@ -1,22 +1,26 @@
-/* ----- CTA Button Events ----- */
+/* -----  Selectors ----- */
 const ctaButton = document.getElementById("cta-button");
 const contactSection = document.getElementById("contact-section");
+const submitButton = document.getElementById("submit-button");
+const modal = document.getElementById("modal-section");
+const overlay = document.getElementById("overlay");
+const requiredFormFieldsInput = document.querySelectorAll(".required input");
+const closeButton = document.getElementById("close-button");
+const aboutSection = document.getElementById("about-section");
 
+
+/* ----- Event Listeners ----- */
 ctaButton.addEventListener("click", scrollToContact);
+submitButton.addEventListener("click", openModal);
+closeButton.addEventListener("click", closeModal);
 
+
+/* ----- Event Listener Functions ----- */
 function scrollToContact() {
   contactSection.scrollIntoView({
     behavior: "smooth",
   });
 }
-
-/* ----- Submit Button Events ----- */
-const submitButton = document.getElementById("submit-button");
-const modal = document.getElementById("modal-section");
-const overlay = document.getElementById("overlay");
-const requiredFormFieldsInput = document.querySelectorAll(".required input");
-
-submitButton.addEventListener("click", openModal);
 
 function openModal(event) {
   let isFormValid = true;
@@ -36,41 +40,29 @@ function openModal(event) {
   }
 }
 
-/* ----- Close Button Events ----- */
-const closeButton = document.getElementById("close-button");
-
-closeButton.addEventListener("click", closeModal);
-
 function closeModal() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 }
 
 /* ----- Intersection Observers for appear animation ----- */
-const aboutSection = document.getElementById("about-section");
 
-const aboutSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      // Add the in-viewport class when the element is in the viewport
-      aboutSection.classList.add("in-viewport");
-      // Disconnect the observer after the animation has started (optional)
-      observer.disconnect();
-    }
-  });
-});
+const aboutSectionObserver = createIntersectionObserver(aboutSection, "in-viewport");
+const contactSectionObserver = createIntersectionObserver(contactSection, "in-viewport");
 
-const contactSectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Add the in-viewport class when the element is in the viewport
-        contactSection.classList.add("in-viewport");
-        // Disconnect the observer after the animation has started (optional)
-        observer.disconnect();
-      }
+function createIntersectionObserver(target, className) {
+    return new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          target.classList.add(className);
+
+          // Disconnect the observer after the animation has started
+          observer.disconnect();
+        }
+      });
     });
-  });
+  }
 
-// Start observing the target element
+// Observe the target elements: when the section is in viewport, start the appear animation
 aboutSectionObserver.observe(aboutSection);
 contactSectionObserver.observe(contactSection);
