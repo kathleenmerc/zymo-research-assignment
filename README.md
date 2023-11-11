@@ -32,8 +32,9 @@ Image of Design Mock:
 ## Requirements
 
 - Use HTML, CSS, and JavaScript.
-- Include a hero section with a call-to-action button that scrolls to the contact form.
 - Create a responsive design for various devices and screen sizes.
+- Include a hero section with a call-to-action button that scrolls to the contact form.
+- Implement a contact form with input fields and a submit button.
 - Use appropriate HTML semantic elements.
 - Apply CSS styles for a visually appealing layout.
 - Implement JavaScript functionality for form submission and interactivity.
@@ -50,11 +51,11 @@ Image of Design Mock:
 
 ## Features
 
-- CSS Flexbox and Grid
-- DOM Manipulation and Event Listeners
-- Form Validation and Modal informing the user of their successful form submission
-- CSS hover styling for buttons
+- Form Validation and Successful Submission Modal for better user experience
 - Media Queries and Smooth Scrolling for website responsiveness
 - Animations implemented with CSS keyframes and JavaScript Intersection Observer
+- CSS Flexbox and Grid
+- DOM Manipulation and Event Listeners
+- CSS hover styling for buttons
 
 
