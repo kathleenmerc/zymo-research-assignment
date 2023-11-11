@@ -45,18 +45,8 @@ function closeModal() {
 
 /* ----- Intersection Observers for appear animation ----- */
 
-const aboutSectionObserver = createIntersectionObserver(
-  aboutSection,
-  "in-viewport"
-);
-
-const contactSectionObserver = createIntersectionObserver(
-  contactSection,
-  "in-viewport"
-);
-
 function createIntersectionObserver(target, className) {
-  return new IntersectionObserver((entries) => {
+  const newObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         target.classList.add(className);
@@ -66,7 +56,20 @@ function createIntersectionObserver(target, className) {
       }
     });
   });
+
+  return newObserver;
 }
+
+// Create each section observer
+const aboutSectionObserver = createIntersectionObserver(
+  aboutSection,
+  "in-viewport"
+);
+
+const contactSectionObserver = createIntersectionObserver(
+  contactSection,
+  "in-viewport"
+);
 
 // Observe the target elements: when the section is in viewport, start the appear animation
 aboutSectionObserver.observe(aboutSection);
